@@ -4,6 +4,12 @@ export const Container = styled.div`
   width: 100%;
   height: 100vh;
 
+  display: grid;
+  grid-template-rows: 80px auto;
+  grid-template-areas: 
+  "header"
+  "content";
+
   > main {
     padding: 2.0rem 0px;
     background-color: red;
@@ -38,8 +44,12 @@ export const Container = styled.div`
         }
 
         .access-link-film {
-          font-size: 1.8rem;
+          font-size: 2.0rem;
+          font-weight: bold;
           color: #000;
+        }
+        .access-link-film:hover {
+          color: red;
         }
 
       }
